@@ -15,7 +15,7 @@ func fail(h http.Event, err error, code int) uint32 {
 }
 
 //export GetSketchSocket
-func GetSketchSocket(e event.Event) uint32 {
+func getsocketurl(e event.Event) uint32 {
     h, err := e.HTTP()
     if err != nil {
         return 1
